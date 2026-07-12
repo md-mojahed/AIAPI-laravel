@@ -60,7 +60,7 @@ class PromptBuilder
         $parts[] = implode("\n", [
             'You MUST respond with a valid JSON object only. No extra text, no markdown, no code fences.',
             'The JSON must have exactly these two keys:',
-            '{"answer": "your answer here", "summary": "updated summary of entire conversation so far in 2 sentences max"}',
+            '{"answer": "your answer here", "summary": "updated summary of entire conversation for future knowledge base for you, within minimum number of sentences"}',
             'The summary should absorb previous context and include this exchange.',
         ]);
 

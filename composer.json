@@ -1,0 +1,28 @@
+{
+    "name": "mojahed/aiapi",
+    "description": "A Laravel AI API package — connect to any LLM provider with a clean, unified interface. Supports OpenAI, Claude, Gemini, Ollama, OpenRouter, Groq, DeepSeek, Mistral and more.",
+    "keywords": ["laravel", "ai", "llm", "openai", "claude", "gemini", "ollama", "openrouter", "groq", "deepseek"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md. Mojahedul Islam",
+            "email": "dev.mojahedul@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mojahed\\AIAPI\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mojahed\\AIAPI\\AIAPIServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}

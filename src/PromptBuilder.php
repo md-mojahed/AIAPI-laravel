@@ -98,8 +98,16 @@ class PromptBuilder
     {
         $item = trim($item);
 
-        // Treat as a file path only if it points to an existing file
-        if (is_file($item)) {
+        // Treat as a file path only if it could be one and points to an existing file.
+        // Long or multi-line strings are raw text — passing them to is_file() raises
+        // "File name is longer than the maximum allowed path length".
+        if (
+            $item !== ''
+            && strlen($item) < PHP_MAXPATHLEN
+            && !str_contains($item, "\n")
+            && !str_contains($item, "\0")
+            && @is_file($item)
+        ) {
             $contents = file_get_contents($item);
 
             return $contents === false ? '' : $contents;

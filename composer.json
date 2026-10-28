@@ -3,7 +3,7 @@
     "description": "A Laravel AI API package — connect to any LLM provider with a clean, unified interface. Supports OpenAI, Claude, Gemini, Ollama, OpenRouter, Groq, DeepSeek, Mistral and more.",
     "keywords": ["laravel", "ai", "llm", "openai", "claude", "gemini", "ollama", "openrouter", "groq", "deepseek"],
     "license": "MIT",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "authors": [
         {
             "name": "Md. Mojahedul Islam",
